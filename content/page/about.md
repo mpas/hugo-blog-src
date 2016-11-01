@@ -1,35 +1,48 @@
 +++
-title = "About"
+title = "About Me"
 date = "2015-10-30"
 +++
-<img src="/images/marco-pas-profile-picture.jpg" width="150" style="margin: 0px 15px 0px 0px; float:left;">
-<p>
-Hi there, let me please introduce myself. My name is Marco Pas and live in the surroundings of Breda (Netherlands). To be more specific you can find me in a small place called [Rijsbergen](https://www.google.nl/maps/place/4891+Rijsbergen/@51.5138148,4.6080621,12z/data=!3m1!4b1!4m2!3m1!1s0x47c41e71ba78dad5:0x999721ff9144c8d2). I am proud father of 3 beautifull children, married, love to travel and watch movies. So nothing special :)
 
-Where can you find me:
+I am software geek and a hands on developer/system architect. Interested in all kinds of software related technologies (languages, architectures and methodologies). Strong believer in the fact that one should keep knowledge up-to-date, but also understand why you should choose a particular technology for a given problem. I’m focused on JVM related technologies, DevOps & Cloud Computing.
 
-[LinkedIn](https://www.linkedin.com/in/marcopas) ~ [Twitter](https://twitter.com/marcopas) ~ [Flickr](https://www.flickr.com/photos/marcopas/) ~ [Delicious](https://delicious.com/marcopas) ~ [FaceBook](https://www.facebook.com/marco.pasopas) ~ [GitHub](https://github.com/mpas)
-</p>
+Keeping knowledge up-to-date if fundamental and that is why regular visits to conferences like
+[QCon](http://www.qconferences.com/), [Devoxx](https://www.devoxx.com/), [BuildStuf](http://www.buildstuff.lt/) and various [Meetup communities](https://www.meetup.com/) are part of my working habbit. Supporting the developer community by organizing the yearly [NextBuild Conference](http://www.nextbuild.nl) for Developers and by Developers.
 
----
-### Experience
----
-Technology
+Born in 1973, living nearby Breda (Netherlands), father of 3 children. Hobbies include cooking, movies/series and enjoying life.
 
+<p style="text-align: center;">
+<a href="http://stackoverflow.com/users/185432/marco">
+<img src="http://stackoverflow.com/users/flair/185432.png" width="208" height="58" alt="profile for Marco at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Marco at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a></p>
 
-### Architect/Developer/Software Engineer/Doing fun things
-Currently i am
+<center>
+Below are some place where you can find some more information about me:
 
----
-### Professional career
----
-#### 2013 - present : Philips Research
-
-#### 2008 - 2013: IHomer
-
-#### 1997 - 2008: CMG / LogicaCMG / Logica
-
-#### 1995 - 1997: Jan de Rijk Logistics
-
+[LinkedIn](https://www.linkedin.com/in/marcopas) ~ [Twitter](https://twitter.com/marcopas) ~ [Flickr](https://www.flickr.com/photos/marcopas/) ~ [StackOverflow](http://stackoverflow.com/users/185432/marco) ~  [FaceBook](https://www.facebook.com/marco.pasopas) ~ [GitHub](https://github.com/mpas)
+</center>
 
 ---
+
+# Technical Experience
+
+During various projects for clients I had the opportunity to get acquainted
+with a variety of technologies and methodologies such as :
+
+DevOps, Consul, Continous Deployment/Delivery, Java, Groovy, Grails, Spock, SpringBoot,
+REST, Amazon Web Services, ElasticSearch, Fluentd, Kibana, MicroServices, Eureka, Spring, RabbitMQ, Amazon Webservices, Jenkins, Test Driven Development, Neo4J, MongoDB, JSON, Apache Tomcat, SonarQube, JMeter, IntelliJ, Nexus, Gradle, Maven, GIT, PostgreSQL, MySQL, Terraform, CloudFormation, Twitter BootStrap, Skeleton CSS, JavaScript, DevOps and lots more..
+
+---
+
+# Work Experience
+
+## 2013 - present : Philips Research
+
+## 2008 - 2013: IHomer
+
+## 1997 - 2008: CMG / LogicaCMG / Logica
+
+## 1995 - 1997: Jan de Rijk Logistics
+
+---
+
+# Education

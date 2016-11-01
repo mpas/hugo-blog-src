@@ -6,7 +6,6 @@ homepage = "https://github.com/mpas"
 tags = ["blog", "category"]
 features = ["blog", "technical", "personal"]
 min_version = 0.15
-paginate=10
 
 [author]
   name = "Marco Pas"

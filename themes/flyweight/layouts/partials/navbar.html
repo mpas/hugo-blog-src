@@ -11,7 +11,8 @@
                     <ul id="navbar">
                         {{ $currentNode := . }}
                         {{ range .Site.Menus.main }}
-                            <li {{if $currentNode.IsMenuCurrent "main" . }}class="current"{{ end }}><a href="{{ .URL }}">{{ .Name }} {{ .Weight }}</a></li>
+                            <li {{if $currentNode.IsMenuCurrent "main" . }}class="current"{{ end }}>
+                                <a href="{{ .URL }}">{{ .Name }}</a></li>
                         {{ end }}
                     </ul>
                 </nav>

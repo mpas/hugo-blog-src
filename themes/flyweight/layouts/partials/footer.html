@@ -33,6 +33,11 @@
                             <i class="fa fa-facebook"></i>
                         </a>
                     {{ end }}
+                    {{ with .Site.Params.email }}
+                        <a title="Email" href="{{ . }}">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    {{ end }}
             </div>
         </div>
 

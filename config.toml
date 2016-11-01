@@ -2,11 +2,14 @@ baseurl = "http://mpas.github.io"
 languageCode = "en-us"
 title = "CodeVerse"
 theme = "flyweight"
-paginate = 2
+paginate = 10
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 PygmentsUseClasses = false
+
+[Permalinks]
+    post = "post/:year/:month/:day/:filename/"
 
 [Taxonomies]
     tag = "tags"
@@ -25,6 +28,7 @@ PygmentsUseClasses = false
     facebook = "https://www.facebook.com/marco.pasopas"
     linkedin = "https://www.linkedin.com/in/marcopas"
     flickr =  "https://www.flickr.com/photos/marcopas/"
+    email =  "mailto:marco.pasopas@gmail.com"
 
 [[menu.main]]
     name = "Blog"
@@ -40,7 +44,6 @@ PygmentsUseClasses = false
     name = "About"
     url = "/page/about/"
     weight = 3
-    identifier = "/page/about/"
 
 [params.strings]
     # used date format
