@@ -1,6 +1,6 @@
 +++
 date = "2016-11-16T10:26:33+01:00"
-tags = ["Consul", "terraform"]
+tags = ["consul", "terraform", "aws"]
 title = "Building a Consul cluster using Terraform/AWS"
 +++
 
@@ -28,15 +28,13 @@ This simple write up is just an example to give you an idea how this Consul clus
 ## Creating a Consul cluster
 The principle is not that hard... Consul nodes can discover each other based on IP Address. If you feed the Consul cluster members with IP Addresses that are part of the cluster you are good to go. In the example case we are going to start a number of Consul cluster members. The first node will be unable to form a cluster but if the second node starts up it will get the ip from the first node and the the first node will then know the ip of the second one.. etc.. So if you start up more than 2 nodes you will be good to go.
 
-<center>
-
-    +------+   +------+  +------+  +------+  +------+
-    |Consul|   |Consul|  |Consul|  |Consul|  |Consul|
-    |Node 1|   |Node 2|  |Node 3|  |Node 4|  |Node n|
-    +------+   +------+  +------+  +------+  +------+
+```console
++------+   +------+  +------+  +------+  +------+
+|Consul|   |Consul|  |Consul|  |Consul|  |Consul|
+|Node 1|   |Node 2|  |Node 3|  |Node 4|  |Node n|
++------+   +------+  +------+  +------+  +------+
     < Find each other based on ip address >
-
-</center>
+```
 
 The power is in the user-data script that is used for bootstrapping the Consul cluster nodes. In the example case they will find each other based on a query using `aws ec2 describe-instances` that will find nodes with a specific name, and from those identified nodes we will extract the IP Addresses that will be used to joint the Consul cluster. You can always modify the query to your own needs off course. The user-data script is used in the launch configuration.
 
