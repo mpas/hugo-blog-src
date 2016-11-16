@@ -231,3 +231,5 @@ resource "aws_elb" "consul-cluster" {
   }
 }
 ```
+
+When putting all the pieces together you should now have a running Consul cluster!
