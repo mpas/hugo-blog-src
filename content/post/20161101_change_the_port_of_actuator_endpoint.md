@@ -1,11 +1,14 @@
 +++
 date = "2016-11-01T19:44:16+01:00"
 tags = ["grails", "springboot"]
-title = "Grails change the port of actuator endpoints"
+title = "Change the port of actuator endpoint in a Grails application"
 +++
 
-When using actuator endpoints to expose metrics, it may be useful to run the
-metrics on a different port.
+When using actuator endpoints to expose metrics in a Grails (Spring Boot) application,
+it may be useful to run the metrics on a different port.
+
+This enables you to hide the metrics for the public and use the different port in
+an AWS infrastucture so that the metrics are only available internal.
 
 Let us first enable the actuator endpoints
 

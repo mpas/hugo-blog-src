@@ -44,5 +44,3 @@ REST, Amazon Web Services, ElasticSearch, Fluentd, Kibana, MicroServices, Eureka
 ## 1995 - 1997: Jan de Rijk Logistics
 
 ---
-
-# Education
