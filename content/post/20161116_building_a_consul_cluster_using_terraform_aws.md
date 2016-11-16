@@ -1,5 +1,5 @@
 +++
-date = "2016-11-02T10:26:33+01:00"
+date = "2016-11-16T10:26:33+01:00"
 tags = ["Consul", "terraform"]
 title = "Building a Consul cluster using Terraform/AWS"
 +++
