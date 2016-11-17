@@ -1,4 +1,4 @@
-baseurl = "mpas.github.io"
+baseurl = "http://mpas.github.io"
 languageCode = "en-us"
 title = "CodeVerse"
 theme = "flyweight"
