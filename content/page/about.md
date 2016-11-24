@@ -30,17 +30,3 @@ with a variety of technologies and methodologies such as :
 
 DevOps, Consul, Continous Deployment/Delivery, Java, Groovy, Grails, Spock, SpringBoot,
 REST, Amazon Web Services, ElasticSearch, Fluentd, Kibana, MicroServices, Eureka, Spring, RabbitMQ, Amazon Webservices, Jenkins, Test Driven Development, Neo4J, MongoDB, JSON, Apache Tomcat, SonarQube, JMeter, IntelliJ, Nexus, Gradle, Maven, GIT, PostgreSQL, MySQL, Terraform, CloudFormation, Twitter BootStrap, Skeleton CSS, JavaScript, DevOps and lots more..
-
----
-
-# Work Experience
-
-## 2013 - present : Philips Research
-
-## 2008 - 2013: IHomer
-
-## 1997 - 2008: CMG / LogicaCMG / Logica
-
-## 1995 - 1997: Jan de Rijk Logistics
-
----
