@@ -24,7 +24,7 @@ The following snippet will create a Docker image using the task `gradle buildDoc
     Docker image should be created.
 */
 String getDockerImageName() {
-  ""my-first-docker-image""
+  "my-first-docker-image"
 }
 
 /*
