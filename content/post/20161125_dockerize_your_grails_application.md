@@ -99,3 +99,7 @@ Run a container based on the previous created image
 ```console
 $ docker run -it --rm -p 8080:8080 docker-test
 ```
+
+This will run the container in interactive mode (`-it`) and the container will be removed when we stop the container (`--rm`). Port 8080 in the container will be available on port 8080 on your host system (`-p 8080:8080`).
+
+This will run the specified container and the endpoint will be available using your browser. Just visit http://localhost:8080
