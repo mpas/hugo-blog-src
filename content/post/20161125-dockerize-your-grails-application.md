@@ -19,8 +19,9 @@ After the Grails application has been created, we will need to add the following
 * Dockerfile (determines what our Docker image will contain)
 * docker-entrypoint.sh (script that is responsible for starting our Grails application)
 
-`File: /src/main/docker/Dockerfile`
 ```Dockerfile
+// file: /src/main/docker/Dockerfile
+
 FROM openjdk:latest
 
 # set environment options
@@ -39,8 +40,8 @@ RUN chmod +x /app/docker-entrypoint.sh
 ENTRYPOINT ["./docker-entrypoint.sh"]
 ```
 
-`File: /src/main/docker/app/docker-entrypoint.sh`
 ```bash
+// file: /src/main/docker/app/docker-entrypoint.sh
 #!/bin/bash
 set -e
 
@@ -52,8 +53,8 @@ Next step is to add the tasks to our `build.gradle` so it can generate the Docke
 
 So add the following snippet to your `build.gradle` file!
 
-`File: /build.gradle`
 ```groovy
+// file: /build.gradle
 String getDockerImageName() {
   "docker-test"
 }
