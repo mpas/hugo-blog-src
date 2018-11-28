@@ -1,7 +1,7 @@
 +++
-date = "2016-11-16T10:26:33+01:00"
-tags = ["consul", "terraform", "aws"]
 title = "Building a Consul cluster using Terraform/AWS"
+tags = ["consul", "terraform", "aws"]
+date = "2016-11-16"
 +++
 
 <img style="float: right;" width="150" src="https://www.consul.io/assets/images/logo_large-475cebb0.png">

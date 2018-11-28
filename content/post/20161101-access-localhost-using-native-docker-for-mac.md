@@ -1,7 +1,7 @@
 +++
-date = "2016-11-01T19:05:44+01:00"
-tags = ["docker", "osx", "mac"]
 title = "Accessing localhost from a Docker Container using native Docker for Mac"
+tags = ["docker", "osx", "mac"]
+date = "2016-11-01"
 +++
 
 Ever had a need to access something from within a [Docker](https://www.docker.com/) container that runs on the host system?

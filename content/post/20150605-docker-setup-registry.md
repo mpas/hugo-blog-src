@@ -1,8 +1,9 @@
 +++
-date = "2015-06-05"
-tags = ["docker"]
 title = "Installing Docker Registry 2.0.1 using self signed certificates"
+tags = ["docker"]
+date = "2015-06-05"
 +++
+
 The new Docker Registry (2.x) has just been released and is rewritten in Go. The default installation now requires SSL security and I was looking for a way to secure the Registry using a NGINX SSL proxy where users need to provide username/password to access the registry. The setup of the NGINX proxy can be done manually but i decided to see if i can reuse the excellent images from Container Solutions to ease the installation.
 
 So the setup will be that we install the Docker Registry and proxy the SSL user access via self signed certificates using an NGINX proxy image provided by Container Solutions. [Check here for more information](http://container-solutions.com/2015/04/running-secured-docker-registry-2-0/)

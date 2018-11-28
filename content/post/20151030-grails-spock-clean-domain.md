@@ -1,7 +1,7 @@
 +++
 title = "Cleaning Grails Domain Objects in a Spock Test"
-date = "2015-10-30"
 tags = ["grails", "spock"]
+date = "2015-10-30"
 +++
 
 Spock is a nice framework to execute integration tests in your Grails application. It may happen that the Spock test actually creates some domain objects and you want to clean them out on everuy single run of your feature test methods.

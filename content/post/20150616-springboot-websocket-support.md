@@ -1,7 +1,7 @@
 +++
 title = "Adding WebSocket/Stomp support to a Spring Boot application"
-date = "2015-06-16"
 tags = ["spring-boot", "websocket"]
+date = "2015-06-16"
 +++
 
 Adding support for [WebSockets](https://en.wikipedia.org/wiki/WebSocket) / [Stomp](https://en.wikipedia.org/wiki/Streaming_Text_Oriented_Messaging_Protocol) in a [Spring Boot](http://projects.spring.io/spring-boot/) application has never been more easy. You can use WebSockets to receive serverside events or push data to the server using WebSockets.

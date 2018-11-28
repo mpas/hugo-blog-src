@@ -1,7 +1,7 @@
 +++
-date = "2016-11-25T20:31:27+01:00"
-tags = ["grails", "docker"]
 title = "Dockerize your Grails application"
+tags = ["grails", "docker"]
+date = "2016-11-25"
 +++
 
 Ever wanted to create a Docker image that contains your Grails application? You are lucky! It is easy to do so..

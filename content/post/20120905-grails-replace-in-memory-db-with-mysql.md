@@ -2,7 +2,6 @@
 title = "Using MySQL instead of in-memory database for a Grails application"
 tags = ["grails","mysql"]
 date = "2012-09-05"
-slug = "grails-replace-in-memory-db-with-mysql"
 +++
 
 A Grails application by default uses a in-memory HSQL database. To switch to a MySQL database the steps are simple and straightforward.

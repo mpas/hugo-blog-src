@@ -1,7 +1,7 @@
 +++
-date = "2016-11-17T16:12:14+02:00"
-tags = ["prometheus", "docker", "cadvisor"]
 title = "Identifying Docker container outage using Prometheus"
+tags = ["prometheus", "docker", "cadvisor"]
+date = "2016-11-17"
 +++
 
 [Prometheus](https://prometheus.io/) is a an open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.

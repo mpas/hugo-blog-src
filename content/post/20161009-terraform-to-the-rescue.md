@@ -1,7 +1,7 @@
 +++
 title = "Terraform to the rescue"
-date = "2016-10-09T00:42:58+02:00"
 tags = ["devops", "aws", "terraform"]
+date = "2016-10-09"
 +++
 
 Getting exposed to [Amazon Web Services](https://aws.amazon.com/) is fun! Certainly when you see that the infrastructure is growing and supporting the daily need of developers and the business. You slowly start adding services and try to keep everything in a state so that it is repeatable and maintainable. At a certain moment it becomes clear that you need the concept of [Infrastructure As Code](https://en.wikipedia.org/wiki/Infrastructure_as_Code).

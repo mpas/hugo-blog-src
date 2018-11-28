@@ -1,7 +1,7 @@
 +++
-date = "2015-06-11"
-tags = ["docker", "rabbitmq"]
 title = "Setting up Docker RabbitMQ with predefined users/vhosts"
+tags = ["docker", "rabbitmq"]
+date = "2015-06-11"
 +++
 
 When creating an Docker image it is nice to have predefined users and vhosts without manually having to create them after the Docker RabbitMQ image has started.

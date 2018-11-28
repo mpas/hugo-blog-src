@@ -21,7 +21,7 @@
                         {{ if .Site.Params.strings.date_format }}
                             {{ .Date.Format .Site.Params.strings.date_format }}
                         {{ else }}
-                            {{ .Date.Format "Mon, Jan 2, 2006" }}
+                            {{ .Date.Format "2006-01-02" }}
                         {{ end }}
                         </div>
                 </div>

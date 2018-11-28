@@ -1,7 +1,7 @@
 +++
-date = "2016-11-24T19:34:45+01:00"
-tags = ["docker", "gradle", "groovy"]
 title = "Creating/Pushing Docker images using Gradle without plugins"
+tags = ["docker", "gradle", "groovy"]
+date = "2016-11-24"
 +++
 
 In our current project we where heavily focussed on the usage of Gradle plugins to create Docker images. We used plugins to create the images and push them to our AWS ECR repositories. When using these plugins we hit various bugs related to the fact that not all developers where using Linux operating systems to test our their containers. At the end we took a look on how we could create those images without using additional plugins.

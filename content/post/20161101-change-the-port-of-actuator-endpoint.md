@@ -1,7 +1,7 @@
 +++
-date = "2016-11-01T19:44:16+01:00"
-tags = ["grails", "springboot"]
 title = "Change the port of actuator endpoint in a Grails application"
+tags = ["grails", "springboot"]
+date = "2016-11-02"
 +++
 
 When using actuator endpoints to expose metrics in a Grails (Spring Boot) application,

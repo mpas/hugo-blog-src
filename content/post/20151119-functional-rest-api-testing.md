@@ -1,7 +1,7 @@
 +++
 title = "Functional Rest API Testing with Grails/Rest Client Builder"
-date = "2015-11-19"
 tags = ["grails", "spock", "rest", "testing"]
+date = "2015-11-19"
 +++
 
 Functional Rest API testing with Grails is easy and fun. We will be creating a simple Rest Controller and test it using Spock and Rest Client Builder.

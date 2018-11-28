@@ -1,7 +1,7 @@
 +++
-date = "2017-05-12T08:31:27+01:00"
-tags = ["infrastructure", "monitoring", "docker", "prometheus", "talks", "devoxx"]
 title = "Infrastructure and System Monitoring using Prometheus"
+tags = ["infrastructure", "monitoring", "docker", "prometheus", "talks", "devoxx"]
+date = "2017-05-12"
 +++
 
 Last week I was lucky enough to host a talk during the Devoxx (UK) on the subject of "Infrastructure and System Monitoring using Prometheus". You can find the used material here:

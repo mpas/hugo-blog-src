@@ -16,11 +16,11 @@
                 {{ if .Site.Params.strings.date_format }}
                     {{ .Date.Format .Site.Params.strings.date_format }}
                 {{ else }}
-                    {{ .Date.Format "Mon, Jan 2, 2006" }}
+                    {{ .Date.Format "2006-01-02" }}
                 {{ end }}
                 <span class="post-meta-info-taxonomy">
-                    in categories:
-                        {{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
+                    <!-- in categories: -->
+                    <!--     {{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }} -->
                     using tags:
                         {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a href="/tags/{{ . | urlize }}">{{ . }}</a>{{ end }}
                 </span>

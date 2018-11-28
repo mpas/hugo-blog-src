@@ -1,7 +1,7 @@
 +++
 title = "Run a Grails 3 generated Fat Jar file in production mode"
-date = "2015-06-11"
 tags = ["grails"]
+date = "2015-06-11"
 +++
 
 When creating a Grails WAR/JAR file using:

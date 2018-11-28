@@ -1,7 +1,7 @@
 +++
 title = "HTTPServletRequestWrapper for ServletInputStream 3.1"
-date = "2015-06-10"
 tags = ["java"]
+date = "2015-06-10"
 +++
 
 A HttpServletRequestWrapper may be handy if you want to be able to read the HTTP Body multi times after you consume it in a filter. The ServletInputStream 3.1 changed a bit and the following methods have to be implemented.

@@ -1,7 +1,7 @@
 ---
-date: 2018-11-28T08:39:55+01:00
-tags: ["ranger", "pathfinder"]
 title: "Ranger - Show File in Path Finder"
+tags: ["ranger", "pathfinder"]
+date: "2018-11-28"
 ---
 
 Ranger is a VIM-inspired filemanager for the console (https://ranger.github.io/) and can easily be installed by using
