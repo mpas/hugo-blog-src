@@ -49,4 +49,4 @@ pygmentsCodefencesGuessSyntax = true
 
 [params.strings]
     # used date format
-    date_format = '02.01.2006'
+    date_format = "2006-01-02"
