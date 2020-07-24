@@ -5,7 +5,7 @@
     <div class="row">
         <div class="post-list">
         <!-- loop though all posts that are of type post -->
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
         {{ range $paginator.Pages }}
             {{ partial "post.html" . }}
         {{ end }}
@@ -21,12 +21,12 @@
             <ul class="pager">
             {{ if .Paginator.HasPrev }}
                 <li>
-                <a class="button" href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
+                <a class="button" href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
                 </li>
             {{ end }}
             {{ if .Paginator.HasNext }}
                 <li>
-                <a class="button" href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
+                <a class="button" href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
                 </li>
             {{ end }}
             </ul>

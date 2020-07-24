@@ -7,6 +7,7 @@ paginate = 10
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
+mainSections = ["post"]
 
 [Permalinks]
     post = "post/:year/:month/:day/:filename/"
@@ -15,8 +16,6 @@ pygmentsCodefencesGuessSyntax = true
     tag = "tags"
 
 [Params]
- #   useChroma = true
-
     # language code for your website
     languagecode = "en-US"
 
@@ -27,9 +26,7 @@ pygmentsCodefencesGuessSyntax = true
     twitter = "https://twitter.com/marcopas"
     github = "https://github.com/mpas"
     stackoverflow = "http://stackoverflow.com/users/185432/marco"
-    facebook = "https://www.facebook.com/marco.pasopas"
     linkedin = "https://www.linkedin.com/in/marcopas"
-    flickr =  "https://www.flickr.com/photos/marcopas/"
     email =  "mailto:marco.pasopas@gmail.com"
 
 [[menu.main]]
@@ -43,9 +40,14 @@ pygmentsCodefencesGuessSyntax = true
     weight = 2
 
 [[menu.main]]
-    name = "About"
+    name = "About Me"
     url = "/page/about/"
     weight = 3
+
+[[menu.main]]
+    name = "Resume"
+    url = "/page/resume"
+    weight = 4
 
 [params.strings]
     # used date format

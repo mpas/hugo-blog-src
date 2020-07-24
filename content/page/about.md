@@ -18,7 +18,7 @@ Tech guy, wannabe cooking chef, traveller, likes to watch movies/series, beer en
 <center>
 Below are some place where you can find some more information about me:
 
-[LinkedIn](https://www.linkedin.com/in/marcopas) ~ [Twitter](https://twitter.com/marcopas) ~ [Flickr](https://www.flickr.com/photos/marcopas/) ~ [StackOverflow](http://stackoverflow.com/users/185432/marco) ~  [FaceBook](https://www.facebook.com/marco.pasopas) ~ [GitHub](https://github.com/mpas)
+[LinkedIn](https://www.linkedin.com/in/marcopas) ~ [Twitter](https://twitter.com/marcopas) ~ [Flickr](https://www.flickr.com/photos/marcopas/) ~ [StackOverflow](http://stackoverflow.com/users/185432/marco)  ~ [GitHub](https://github.com/mpas)
 </center>
 
 ---

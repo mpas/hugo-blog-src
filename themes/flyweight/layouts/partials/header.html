@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Params.languagecode }}">
 <head>
+  
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -8,7 +9,7 @@
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="author" content="{{ .Site.Params.author }}">
 
-  <meta name="generator" content="{{ .Hugo.Generator }}" />
+  <meta name="generator" content="{{ hugo.Generator }}" />
   <meta name="robots" content="index,follow">
 
   <!-- Mobile Specific Metas
@@ -21,13 +22,22 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Skeleton CSS -->
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="/css/font-awesome-all.min.css">
+ 
+  <!-- Prism code highlighting -->
+  <script src="/js/prism.js"></script>
+  <link rel="stylesheet" href="/css/prism.css">
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/custom.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/syntax.css">
-
+  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
 </head>
