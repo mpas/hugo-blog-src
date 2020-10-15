@@ -2,15 +2,20 @@ baseurl = "http://mpas.github.io"
 languageCode = "en-us"
 title = "CodeVerse"
 theme = "flyweight"
-paginate = 10
+paginate = 5
 
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
-mainSections = ["post"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [Permalinks]
-    post = "post/:year/:month/:day/:filename/"
+    posts = "/posts/:year/:month/:day/:filename/"
+    pages = "/pages/:filename/"
 
 [Taxonomies]
     tag = "tags"
@@ -36,19 +41,15 @@ mainSections = ["post"]
 
 [[menu.main]]
     name = "Post List"
-    url = "/post"
+    url = "/posts"
     weight = 2
 
 [[menu.main]]
     name = "About Me"
-    url = "/page/about/"
+    url = "/pages/about/"
     weight = 3
 
 [[menu.main]]
     name = "Resume"
-    url = "/page/resume"
+    url = "/pages/resume"
     weight = 4
-
-[params.strings]
-    # used date format
-    date_format = "2006-01-02"

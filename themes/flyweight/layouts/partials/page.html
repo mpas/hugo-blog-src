@@ -1,1 +1,19 @@
-{{ partial "post.html" . }}
+<article class="post u-cf">
+    <div class="row">
+        <div class="twelve columns">
+            <h1 class="post-title">{{ .Title}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns">
+            {{ .Content }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns">
+            <div class="post-meta-info">
+                Published on {{ .Date.Format "2006-01-02" }}
+            </div>
+        </div>
+    </div>
+</article>

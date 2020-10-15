@@ -4,11 +4,11 @@
 <div class="container">
     <div class="row">
         <div class="post-list">
-        <!-- loop though all posts that are of type post -->
-        {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-        {{ range $paginator.Pages }}
-            {{ partial "post.html" . }}
-        {{ end }}
+            <!-- loop though all posts that are of type post -->
+            {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+                {{ range $paginator.Pages }}
+                {{ partial "post.html" . }}
+            {{ end }}
         </div>
     </div>
 </div>
