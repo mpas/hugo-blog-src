@@ -1,6 +1,7 @@
 baseurl = "http://mpas.github.io"
 languageCode = "en-us"
 title = "CodeVerse"
+googleAnalytics = "UA-180712180-1"
 theme = "flyweight"
 paginate = 5
 
