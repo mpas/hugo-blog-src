@@ -2,7 +2,7 @@
 title = "Time tracking with Org Mode and sum time per tag"
 author = ["Marco Pas"]
 date = 2021-03-16T10:20:00+01:00
-tags = ["emacs", "orgmode", "org"]
+tags = ["emacs", "orgmode", "org", "timetracking"]
 draft = false
 +++
 
