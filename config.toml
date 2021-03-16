@@ -5,14 +5,10 @@ googleAnalytics = "UA-180712180-1"
 theme = "flyweight"
 paginate = 5
 
-pygmentsCodeFences = true
-pygmentsUseClasses = true
-pygmentsCodefencesGuessSyntax = true
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+# [markup]
+#   [markup.goldmark]
+#     [markup.goldmark.renderer]
+#       unsafe = true
 
 [Permalinks]
     posts = "/posts/:year/:month/:day/:filename/"
