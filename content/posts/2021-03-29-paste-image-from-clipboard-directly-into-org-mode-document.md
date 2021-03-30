@@ -1,5 +1,5 @@
 +++
-title = "Paste image from clipboard directly in an org file"
+title = "Paste image from clipboard directly into org-mode document"
 author = ["Marco Pas"]
 date = 2021-03-29T18:55:00+02:00
 tags = ["emacs", "orgmode", "elisp", "screenshot", "image"]
