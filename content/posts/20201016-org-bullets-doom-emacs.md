@@ -2,7 +2,7 @@
 title = "Get pretty org-bullets in Doom Emacs"
 author = ["Marco Pas"]
 date = 2020-10-16T20:21:00+02:00
-tags = ["emacs", "doom", "org", "orgmode"]
+tags = ["emacs", "doom", "orgmode"]
 draft = false
 +++
 
