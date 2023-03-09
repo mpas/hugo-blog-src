@@ -1,22 +1,65 @@
-<div class="container">
-    <div id="header">
-        <div class="row">
-            <div class="six columns">
-                <div id="brand">
-                    <a href="{{.Site.BaseURL}}">{{ .Site.Title }}</a>
+<div>
+    <div class="columns is-mobile" style="height: 10px; padding: 0; margin: 0;">
+        <div class="column has-background-black" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-success" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-link" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-warning" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-danger" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-info" style="margin: 0; padding: 0;"></div>
+    </div>
+
+    <nav class="navbar has-background-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://mpas.github.io">
+                MARCO PAS
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-start">
+                    {{ with .Site.Menus.main }}
+                    {{ range . }}
+                    <a class="navbar-item is-hoverable" href="{{ .URL }}">
+                        {{if .Params.icon }}
+                        <span class="icon has-text-primary">
+                            <i class="{{ .Params.icon }}"></i>
+                        </span>
+                        {{ end }}
+                        <span>
+                            {{ .Name }}
+                        </span>
+                        {{ end }}
+                    </a>
+                    {{ end }}
                 </div>
             </div>
-            <div class="six columns">
-                <nav class="u-pull-right">
-                    <ul id="navbar">
-                        {{ $currentNode := . }}
-                        {{ range .Site.Menus.main }}
-                            <li {{if $currentNode.IsMenuCurrent "main" . }}class="current"{{ end }}>
-                                <a href="{{ .URL }}">{{ .Name }}</a></li>
-                        {{ end }}
-                    </ul>
-                </nav>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field control">
+                        <div class="control has-icons-left">
+                            <form id="search" method="get" role="search">
+                                <input class="input" type="search" id="search-input" placeholder="Search">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+    </nav>
+
+    <div class="columns is-mobile" style="height: 10px; padding: 0; margin: 0;">
+        <div class="column has-background-black" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-success" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-link" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-warning" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-danger" style="margin: 0; padding: 0;"></div>
+        <div class="column has-background-info" style="margin: 0; padding: 0;"></div>
     </div>
 </div>

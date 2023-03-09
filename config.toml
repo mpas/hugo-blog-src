@@ -1,24 +1,41 @@
 baseurl = "https://mpas.github.io"
-languageCode = "en-us"
-title = "CodeVerse"
-googleAnalytics = "UA-180712180-1"
-theme = "flyweight"
-paginate = 5
 
-# [markup]
-#   [markup.goldmark]
-#     [markup.goldmark.renderer]
-#       unsafe = true
+# website title
+title = "Marco Pas"
+
+# theme name
+theme = "flyweight"
+
+# default amount of posts in each pages
+paginate = 12
+
+# google analytics code [UA-XXXXXXXX-X]
+googleAnalytics = "UA-180712180-1"
+
+# whether to use robots.txt
+enableRobotsTXT = true
+
+# whether to use emoji code
+enableEmoji = true
+
+[outputs]
+    home = ["HTML", "RSS", "Lunr"]
+
+[outputFormats.Lunr]
+baseName = "index"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
 
 [Permalinks]
     posts = "/posts/:year/:month/:day/:filename/"
     pages = "/pages/:filename/"
 
-[Taxonomies]
-    tag = "tags"
-
 [Params]
-    # language code for your website
+    # the date format to use
+    dateFormat = "January 2, 2006"
+
+    # language code ["en", "zh-CN", "fr", "pl", ...]
     languagecode = "en-US"
 
     # name of the site author; used in header meta information
@@ -31,22 +48,31 @@ paginate = 5
     linkedin = "https://www.linkedin.com/in/marcopas"
     email =  "mailto:marco.pasopas@gmail.com"
 
+[menu]
 [[menu.main]]
-    name = "Blog"
+    name = "Home"
     url = "/"
     weight = 1
+    [menu.main.params]
+        icon = "fas fa-book has-text-primary"
 
 [[menu.main]]
-    name = "Post List"
+    name = "Archive"
     url = "/posts"
     weight = 2
+    [menu.main.params]
+        icon = "fas fa-archive has-text-warning"
 
 [[menu.main]]
-    name = "About Me"
-    url = "/pages/about/"
+    name = "Tags"
+    url = "/tags"
     weight = 3
+    [menu.main.params]
+        icon = "fas fa-tag has-text-danger"
 
 [[menu.main]]
-    name = "Resume"
-    url = "/pages/resume"
+    name = "About"
+    url = "/pages/about/"
     weight = 4
+    [menu.main.params]
+        icon = "fas fa-address-card has-text-success"

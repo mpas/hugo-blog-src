@@ -10,6 +10,7 @@ Tracking time using Org Mode is simple and easy. You can quickly create reports 
 
 This can be achieved by using a simple formula and the usage of an awesome Org package called [Org Aggregate](https://github.com/tbanel/orgaggregate).
 
+<!--more-->
 
 ## Input data {#input-data}
 
@@ -34,7 +35,6 @@ CLOCK: [2021-03-12 Fri 11:24]--[2021-03-12 Fri 11:40] =>  0:16
 :END:
 ```
 
-
 ## Reporting {#reporting}
 
 ```text
@@ -53,27 +53,27 @@ CLOCK: [2021-03-12 Fri 11:24]--[2021-03-12 Fri 11:40] =>  0:16
 #+END:
 ```
 
--   **:tags t** used to display the tags
--   **:match** "work|client'= used to filter the tags of interest
--   **:header** "#+TBLNAME: timetable\n"= used to name our table so we can process it later on using [Org Aggregate](https://github.com/tbanel/orgaggregate)
--   **#+TBLFM:** is using a function to correctly display time in **hh:mm** so we can use it later on to sum. **Note:** this is required as the package [Org Aggregate](https://github.com/tbanel/orgaggregate) that we are using to aggregate data is expecting the time in a **hh:mm** format
+- **:tags t** used to display the tags
+- **:match** "work|client'= used to filter the tags of interest
+- **:header** "#+TBLNAME: timetable\n"= used to name our table so we can process it later on using [Org Aggregate](https://github.com/tbanel/orgaggregate)
+- **#+TBLFM:** is using a function to correctly display time in **hh:mm** so we can use it later on to sum. **Note:** this is required as the package [Org Aggregate](https://github.com/tbanel/orgaggregate) that we are using to aggregate data is expecting the time in a **hh:mm** format
 
 <!--listend-->
 
 {{< highlight emacs-lisp "linenos=table, linenostart=1" >}}
 (defun convert-org-clocktable-time-to-hhmm (time-string)
-  "Converts a time string to HH:MM"
-  (if (> (length time-string) 0)
-      (progn
-        (let* ((s (s-replace "*" "" time-string))
-               (splits (split-string s ":"))
-               (hours (car splits))
-               (minutes (car (last splits)))
-               )
-          (if (= (length hours) 1)
-              (format "0%s:%s" hours minutes)
-            (format "%s:%s" hours minutes))))
-    time-string))
+"Converts a time string to HH:MM"
+(if (> (length time-string) 0)
+(progn
+(let* ((s (s-replace "*" "" time-string))
+(splits (split-string s ":"))
+(hours (car splits))
+(minutes (car (last splits)))
+)
+(if (= (length hours) 1)
+(format "0%s:%s" hours minutes)
+(format "%s:%s" hours minutes))))
+time-string))
 {{< /highlight >}}
 
 Use [Org Aggregate](https://github.com/tbanel/orgaggregate) to sum the times of the tags
@@ -88,4 +88,4 @@ Use [Org Aggregate](https://github.com/tbanel/orgaggregate) to sum the times of 
 #+END:
 ```
 
--   **:cond** used to filter empty rows from the data input!
+- **:cond** used to filter empty rows from the data input!

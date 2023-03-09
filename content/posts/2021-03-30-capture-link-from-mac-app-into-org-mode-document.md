@@ -3,6 +3,7 @@ title = "Capture link from Mac app into org-mode document"
 author = ["Marco Pas"]
 date = 2021-03-30T12:54:00+02:00
 tags = ["orgmode", "emacs", "elisp"]
+categories = ["development"] 
 draft = false
 +++
 

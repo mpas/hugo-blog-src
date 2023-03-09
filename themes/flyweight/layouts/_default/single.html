@@ -1,21 +1,12 @@
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
-
-{{ if  eq .Type "posts" }}
-  <div class="container">
-    <div class="row">
-      <div class="post-content">
-        {{ partial "post.html" . }}
-      </div>
-    </div>
-  </div>
-{{ else if eq .Type "pages" }}
-  <div class="container">
-    <div class="row">
-      <div class="page-content">
-        {{ partial "page.html" . }}
-      </div>
-    </div>
-  </div>
+{{ define "main" }}
+<div class="box mt-5 has-background-white">
+    <article>
+        {{ partial "partials/meta/header.html" . }}
+        <div class="content">
+            <h1>{{ .Title}}</h1>
+            {{ .Content }}
+        </div>
+        {{ partial "partials/meta/footer.html" . }}
+    </article>
+</div>
 {{ end }}
-{{ partial "footer.html" . }}

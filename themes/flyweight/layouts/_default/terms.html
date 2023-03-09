@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="box mt-5 has-background-white">
+    <div class="content">
+        <h2 class="is-size-5">Post by Categories</h2>
+
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a class="tag is-size-6 mt-3 ml-3 has-background-link has-text-white" href="/categories/{{ $name | urlize }}">{{
+            $name | humanize }} ({{ $taxonomy.Count }})</a>
+        {{ end }}
+
+        <h1 class="is-size-5">Post by Tags</h1>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        <a class="tag is-size-6 mt-3 ml-3 has-background-link has-text-white" href="/tags/{{ $name | urlize }}/">{{
+            $name
+            }} ({{ $taxonomy.Count }})</a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

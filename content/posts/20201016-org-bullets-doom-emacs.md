@@ -6,7 +6,10 @@ tags = ["emacs", "doom", "orgmode"]
 draft = false
 +++
 
-When installing [Doom Emacs](https://github.com/hlissner/doom-emacs) and using org-mode the defaults bullets are \`\*\`. In order to get some fancy bullets the following steps need to be taken.
+When installing [Doom Emacs](https://github.com/hlissner/doom-emacs) and using org-mode the defaults bullets are \`\*\`.
+In order to get some fancy bullets the following steps need to be taken.
+
+<!--more-->
 
 1.  Add the org-mode `+pretty` flag to your org settings in `init.el` To read more on the available flags check the [org-mode Doom Emacs module \`lang/org\`](https://github.com/hlissner/doom-emacs/tree/develop/modules/lang/org#module-flags)
 

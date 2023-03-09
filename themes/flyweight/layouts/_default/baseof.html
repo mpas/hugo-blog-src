@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Params.languagecode }}">
+
+<head>
+
+    <!-- Basic Page Need -->
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }} - {{ .Title }}</title>
+    <meta name="description"
+        content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+
+    <meta name="generator" content="{{ hugo.Generator }}" />
+    <meta name="robots" content="index,follow">
+
+
+    <!-- Javascript -->
+    <!-- Mermaid.js -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+
+    <!-- Google Analytics -->
+    {{ template "_internal/google_analytics.html" . }}
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+
+<body class="has-background-light">
+    {{ partial "navbar.html" . }}
+
+    <div class="container">
+        <div class="is-search-result">
+            {{ block "main" . }}{{ end }}
+        </div>
+    </div>
+
+    <!-- results template for search results -->
+    <template id="is-search-template" hidden>
+        <article class="content">
+            <div>
+                <hr class="mt-0 mb-0">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-calendar"></i>
+                    </span>
+                    <span>
+                        <div class="date"></div>
+                    </span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-tag"></i>
+                    </span>
+                    <span>
+                        <div class="tags"></div>
+                    </span>
+                </span>
+                <hr class="mt-0 mb-0">
+            </div>
+            <div>
+                <h5 class="mt-2">
+                    <a class="is-read-more" href=""></a>
+                </h5>
+                <div class="summary"></div>
+            </div>
+        </article>
+    </template>
+    {{ partial "footer.html" . }}
+
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+            diameter: 56,
+            backgroundColor: 'rgb(255, 82, 82)',
+            textColor: '#fff'
+        })</script>
+    <script src="/js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,14 +1,12 @@
+{{ define "main" }}
 <div class="box mt-5 has-background-white">
     <article>
-
         {{ partial "partials/meta/header.html" . }}
-
         <div class="content">
-            <h2><a href="{{ .Permalink }}">{{ .Title}}</a></h2>
+            <h2>{{ .Title}}</h2>
             {{ .Content }}
         </div>
-
         {{ partial "partials/meta/footer.html" . }}
-
     </article>
 </div>
+{{ end }}

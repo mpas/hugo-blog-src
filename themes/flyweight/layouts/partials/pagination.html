@@ -1,0 +1,61 @@
+<div class="box">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+
+        {{ if not .Paginator.HasPrev }}
+        <a class="pagination-previous is-disabled">
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-arrow-left"></i>
+                </span>
+                <span>Newer Posts</span>
+            </span>
+        </a>
+        {{ end }}
+        {{ if .Paginator.HasPrev }}
+        <a class="pagination-previous" href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}">
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-arrow-left"></i>
+                </span>
+                <span>Newer Posts</span>
+            </span>
+        </a>
+        {{ end }}
+
+        {{ if not .Paginator.HasNext }}
+        <a class="pagination-next is-disabled">
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-arrow-right"></i>
+                </span>
+                <span>Older Posts</span>
+            </span>
+        </a>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+        <a class="pagination-next has" href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}">
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-arrow-right"></i>
+                </span>
+                <span>Older Posts</span>
+            </span>
+        </a>
+        {{ end }}
+        {{ end }}
+
+
+        <ul class="pagination-list">
+            <li><a class="pagination-link" href="{{ .Site.BaseURL }}" aria-label="Home">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span>Home</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

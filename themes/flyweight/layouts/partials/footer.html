@@ -1,40 +1,38 @@
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="twelve columns">
-                <div id="social">
-                    {{ with .Site.Params.twitter }}
-                        <a title="Twitter" href="{{ . }}">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.linkedin }}
-                        <a title="LinkedIn" href="{{ . }}">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.github }}
-                        <a title="GitHub" href="{{ . }}">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.stackoverflow }}
-                        <a title="StackOverflow" href="{{ . }}">
-                            <i class="fab fa-stack-overflow"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.email }}
-                        <a title="Email" href="{{ . }}">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                    {{ end }}
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="twelve columns" id="copyright">&copy; {{ .Site.LastChange.Format "2006" }} ~ {{ .Site.Title }} / Powered by <a href="http://gohugo.io/">Hugo</div>
-        </div>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>Lets connect on:</p>
+        <p>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span><a href="{{ .Site.Params.twitter }}">Twitter</a></span>
+            </span>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fab fa-stack-overflow"></i>
+                </span>
+                <span><a href="{{ .Site.Params.stackoverflow }}">StackOverflow</a></span>
+            </span>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+                <span><a href="{{ .Site.Params.linked }}">LinkedIn</a></span>
+            </span>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span><a href="{{ .Site.Params.github}}">GitHub</a></span>
+            </span>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span><a href="{{ .Site.Params.email }}">Email</a></span>
+            </span>
+        </p>
     </div>
 </footer>
-</body>
-</html>
+<script src="/js/search.js"></script>

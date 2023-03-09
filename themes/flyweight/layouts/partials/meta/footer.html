@@ -1,0 +1,33 @@
+<div class="content">
+    <hr class=" mt-0 mb-0">
+
+    {{ if .Params.categories }}
+    <span class="icon-text">
+        <span class="icon">
+            <i class="fas fa-folder"></i>
+        </span>
+        <span>
+            {{ range $k, $v := .GetTerms "categories" }}
+            {{- if $k }}, {{ end }}
+            <a class="is-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{- end }}
+        </span>
+    </span>
+    {{ end }}
+
+    {{ if .Params.tags }}
+    <span class="icon-text">
+        <span class="icon">
+            <i class="fas fa-tag"></i>
+        </span>
+        <span>
+            {{ range $k, $v := .GetTerms "tags" }}
+            {{- if $k }}, {{ end }}
+            <a class="is-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{- end }}
+        </span>
+    </span>
+    {{ end }}
+
+    <hr class="mt-0 mb-0">
+</div>

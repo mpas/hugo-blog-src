@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="is-search-result"></div>
+
+<!-- resuls template for search results -->
+<template id="is-search-template" hidden>
+    <article class="content">
+        <div>
+            <hr class="mt-0 mb-0">
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-calendar"></i>
+                </span>
+                <span>
+                    <div class="date"></div>
+                </span>
+            </span>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-tag"></i>
+                </span>
+                <span>
+                    <div class="tags"></div>
+                </span>
+            </span>
+            <hr class="mt-0 mb-0">
+        </div>
+        <div>
+            <h5 class="mt-2">
+                <a class="is-read-more" href=""></a>
+            </h5>
+            <div class="summary"></div>
+        </div>
+    </article>
+</template>
+{{ end }}

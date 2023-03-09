@@ -1,38 +1,10 @@
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
+{{ define "main" }}
+<!-- loop though all posts that are of type post -->
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+{{ range $paginator.Pages }}
+{{ partial "post.html" . }}
+{{ end }}
 
-<div class="container">
-    <div class="row">
-        <div class="post-list">
-            <!-- loop though all posts that are of type post -->
-            {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-                {{ range $paginator.Pages }}
-                {{ partial "post.html" . }}
-            {{ end }}
-        </div>
-    </div>
-</div>
 
-<!-- pagination -->
-<div class="container">
-    <div class="row">
-        <div class="twelve columns">
-        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-            <ul class="pager">
-            {{ if .Paginator.HasPrev }}
-                <li>
-                <a class="button" href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
-                </li>
-            {{ end }}
-            {{ if .Paginator.HasNext }}
-                <li>
-                <a class="button" href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
-                </li>
-            {{ end }}
-            </ul>
-        {{ end }}
-        </div>
-    </div>
-</div>
-
-{{ partial "footer.html" . }}
+{{ partial "pagination.html" . }}
+{{ end }}
