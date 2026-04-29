@@ -18,8 +18,6 @@ enableRobotsTXT = true
 # whether to use emoji code
 enableEmoji = true
 
-ignoreLogs = ['warning-goldmark-raw-html']
-
 [frontmatter]
     lastmod = [":git", "lastmod", "publishDate", "date"]
 
@@ -34,6 +32,8 @@ notAlternative = true
 
 [markup.goldmark.renderer]
 unsafe= true
+
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [Permalinks]
     posts = "/posts/:year/:month/:slug/"
