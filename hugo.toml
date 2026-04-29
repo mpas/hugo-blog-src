@@ -32,6 +32,9 @@ isPlainText = true
 mediaType = "application/json"
 notAlternative = true
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [Permalinks]
     posts = "/posts/:year/:month/:slug/"
     pages = "/pages/:slug/"
