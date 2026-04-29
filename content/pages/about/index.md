@@ -5,7 +5,7 @@ author:
 date: 2026-04-29
 draft: false
 created: "2020-10-13T09:03:00Z"
-modified: "2026-04-29T09:03:00Z"
+modified: "2026-04-29T09:25:00Z"
 ---
 
 I am software geek and a hands on developer/system architect. Interested in all kinds of software related technologies (languages, architectures and methodologies). Strong believer in the fact that one should keep knowledge up-to-date, but also understand why you should choose a particular technology for a given problem.
@@ -24,7 +24,7 @@ Below are some place where you can find some more information about me:
 
 <center>
 
-[LinkedIn](https://www.linkedin.com/in/marcopas) ~ [Twitter](https://twitter.com/marcopas) ~ [Flickr](https://www.flickr.com/photos/marcopas/) ~ [StackOverflow](http://stackoverflow.com/users/185432/marco) ~ [GitHub](https://github.com/mpas)
+[GitHub](https://github.com/mpas) ~ [LinkedIn](https://www.linkedin.com/in/marcopas) ~ [StackOverflow](http://stackoverflow.com/users/185432/marco) ~ [Instagram](https://www.instagram.com/marcopas)
 
 </center>
 
