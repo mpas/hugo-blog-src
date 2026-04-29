@@ -5,9 +5,9 @@ description = "A clean and simple single column theme for [hugo](http://hugo.spf
 homepage = "https://github.com/mpas"
 tags = ["blog", "category"]
 features = ["blog", "technical", "personal"]
-min_version = 0.15
+min_version = 0.120
 
 [author]
   name = "Marco Pas"
   homepage = "https://github.com/mpas"
-  
+

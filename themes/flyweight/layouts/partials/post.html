@@ -1,14 +1,12 @@
 <div class="box mt-5 has-background-white">
-    <article>
+  <article>
+    {{ partial "meta/header.html" . }}
 
-        {{ partial "partials/meta/header.html" . }}
+    <div class="content">
+      <h2><a href="{{ .Permalink }}">{{ .Title}}</a></h2>
+      {{ .Content }}
+    </div>
 
-        <div class="content">
-            <h2><a href="{{ .Permalink }}">{{ .Title}}</a></h2>
-            {{ .Content }}
-        </div>
-
-        {{ partial "partials/meta/footer.html" . }}
-
-    </article>
+    {{ partial "meta/footer.html" . }}
+  </article>
 </div>
