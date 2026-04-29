@@ -2,10 +2,10 @@
 title: "About"
 author:
   - Marco Pas
-date: 2020-10-06
+date: 2026-04-29
 draft: false
 created: "2020-10-13T09:03:00Z"
-modified: "2026-04-29T08:56:00Z"
+modified: "2026-04-29T09:03:00Z"
 ---
 
 I am software geek and a hands on developer/system architect. Interested in all kinds of software related technologies (languages, architectures and methodologies). Strong believer in the fact that one should keep knowledge up-to-date, but also understand why you should choose a particular technology for a given problem.
