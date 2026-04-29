@@ -4,6 +4,8 @@ author:
   - Marco Pas
 date: 2020-10-06
 draft: false
+created: "2020-10-13T09:03:00Z"
+modified: "2026-04-29T08:56:00Z"
 ---
 
 I am software geek and a hands on developer/system architect. Interested in all kinds of software related technologies (languages, architectures and methodologies). Strong believer in the fact that one should keep knowledge up-to-date, but also understand why you should choose a particular technology for a given problem.
@@ -26,14 +28,12 @@ Below are some place where you can find some more information about me:
 
 </center>
 
-
 ## Technical Experience {#technical-experience}
 
 During various projects for clients I had the opportunity to get acquainted with a variety of technologies and methodologies such as:
 
 Go, Elixir, DevOps, Consul, Continous Deployment/Delivery, Java, Groovy, Grails, Spock, SpringBoot, REST, Amazon Web Services, ElasticSearch, Fluentd, Kibana, MicroServices, Eureka, Spring, RabbitMQ, Amazon Webservices, Jenkins, Test Driven Development, Neo4J, MongoDB, JSON, Apache Tomcat, SonarQube, JMeter, IntelliJ, Nexus, Gradle, Maven, GIT, PostgreSQL, MySQL, Terraform, CloudFormation, Twitter BootStrap, Skeleton CSS, JavaScript, DevOps and lots more..
 
-
 ## Resume {#resume}
 
-You can find my resume online at <http://mpas.github.io/resume>
+You can find my resume here: [Download resume PDF](./resume.pdf)

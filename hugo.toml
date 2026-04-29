@@ -84,3 +84,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
     weight = 4
     [menu.main.params]
         icon = "fas fa-address-card has-text-success"
+
+[[menu.main]]
+    name = "Resume"
+    url = "/pages/about/resume.pdf"
+    weight = 5
+    [menu.main.params]
+        icon = "fas fa-file-alt has-text-success"
